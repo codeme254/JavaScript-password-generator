@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript password generator application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="group">
+            <input type="number" class="input" id = 'letters'>
+            <label for="letters" class="label">letters</label>
+        </div>
+        <div class="group">
+            <input type="number" class="input" id = 'digits'>
+            <label for="digits" class="label">digits</label>
+        </div>
+        <div class="group">
+            <input type="number" class="input" id = 'symbols'>
+            <label for="symbols" class="label">symbols</label>
+        </div>
+    </div>
+    <div class="button-box">
+        <button class="btn">generate</button>
+    </div>
+    <div class="generated-password-box">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

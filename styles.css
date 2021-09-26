@@ -1,0 +1,117 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 3rem;
+    line-height: 1.7;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #111;
+    font-size: 1.8rem;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    padding: 1rem 1.5rem;
+    color: #333;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px;
+    border-bottom: 3px solid transparent;
+    transition: all .3s ease;
+}
+.input:focus{
+    border-bottom: 3px solid gold;
+    box-shadow: 0 0 9px;
+    transform: scale(1.005);
+}
+.label{
+    text-transform: capitalize;
+    letter-spacing: .4rem;
+    font-size: 2rem;
+}
+.button-box{
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.btn{
+    padding: 2rem 2.5rem;
+    border: none;
+    box-shadow: 0 0 15px gold;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: crimson;
+    text-transform: uppercase;
+    border-radius: 100px;
+    transition: all .4s;
+}
+.btn:active{
+    transform: scale(0.89) translateY(-1px);
+}
+.passLength{
+    display: block;
+    text-align: center;
+    background-color: crimson;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.generated-password-box{
+    padding: 1rem;
+    box-shadow: 0 0 10px;
+    max-height: 35rem;
+    min-height: fit-content;
+    max-width: 90rem;
+    margin: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    text-align: justify;
+}
+.generated-password-box::-webkit-scrollbar{
+    width: 1rem;
+}
+.generated-password-box::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 5px;
+}
+.generated-password-box::-webkit-scrollbar-track{
+    background-color: gold;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 850px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 0 10px;
+        padding: 2rem 0;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width : 340px){
+    .input{
+        width: 10rem;
+    }
+}
